@@ -18,6 +18,13 @@ class StockListView: BaseView {
         return view
     }()
     
+    let searchViewController: UISearchController = {
+        let view  = UISearchController(searchResultsController: nil)
+        view.searchBar.placeholder = "Enter a company"
+        view.obscuresBackgroundDuringPresentation = false
+        return view
+    }()
+    
     //MARK: - Configures
     
     //BaseView에 있는 configureUI를 오버라이드해서 가져온다.
