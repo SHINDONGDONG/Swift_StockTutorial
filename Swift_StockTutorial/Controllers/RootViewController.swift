@@ -24,7 +24,7 @@ class RootViewController: UIViewController {
 //MARK: - Configures
     
     func configureUI(){
-        view.backgroundColor = .red
+        view.backgroundColor = .systemBackground
     }
     
 }
