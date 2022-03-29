@@ -1,3 +1,9 @@
+
+
+import Combine
+
 protocol StockRepository {
-    var apiKey: String { get set }
+    func fetchStockPublisher(keywords: String) -> AnyPublisher<StockResult,Error>
+    
+    
 }
